@@ -2,12 +2,12 @@ package Noh;
 
 import Base.Veiculo;
 
-public class NohVeiculo {
+public class Nohveiculo {
 	private Veiculo info;
-	private NohVeiculo prox;
-	private NohVeiculo ant;
+	private Nohveiculo prox;
+	private Nohveiculo ant;
 	
-	public NohVeiculo(Veiculo info2) {
+	public Nohveiculo(Veiculo info2) {
 		this.info = info2;
 		this.prox = null;
 		this.ant = null;
@@ -21,19 +21,19 @@ public class NohVeiculo {
 		this.info = n;
 	}
 
-	public NohVeiculo getProx() {
+	public Nohveiculo getProx() {
 		return prox;
 	}
 
-	public void setProx(NohVeiculo n) {
+	public void setProx(Nohveiculo n) {
 		this.prox = n;
 	}
 
-	public NohVeiculo getAnt() {
+	public Nohveiculo getAnt() {
 		return ant;
 	}
 
-	public void setAnt(NohVeiculo n) {
+	public void setAnt(Nohveiculo n) {
 		this.ant = n;
 	}
 	

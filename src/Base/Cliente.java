@@ -4,7 +4,7 @@ public class Cliente {
 	private String nome;
 	private long CNH, telefone, CPF;
 	
-	public Cliente(String nome, long CNH, long telefone, long CPF) {
+	public Cliente(String nome, Long CHN, Long telfone, Long CPF) {
 		this.nome = nome;
 		this.CNH = CNH;
 		this.telefone = telefone;

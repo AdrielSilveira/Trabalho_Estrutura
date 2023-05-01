@@ -2,12 +2,12 @@ package Noh;
 
 import Base.Locacao;
 
-public class NohLocacao {
+public class Nohlocacao {
 	private Locacao info;
-	private NohLocacao prox;
-	private NohLocacao ant;
+	private Nohlocacao prox;
+	private Nohlocacao ant;
 	
-	public NohLocacao(Locacao info2) {
+	public Nohlocacao(Locacao info2) {
 		this.info = info2;
 		this.prox = null;
 		this.ant = null;
@@ -21,19 +21,19 @@ public class NohLocacao {
 		this.info = n;
 	}
 
-	public NohLocacao getProx() {
+	public Nohlocacao getProx() {
 		return prox;
 	}
 
-	public void setProx(NohLocacao n) {
+	public void setProx(Nohlocacao n) {
 		this.prox = n;
 	}
 
-	public NohLocacao getAnt() {
+	public Nohlocacao getAnt() {
 		return ant;
 	}
 
-	public void setAnt(NohLocacao n) {
+	public void setAnt(Nohlocacao n) {
 		this.ant = n;
 	}
 	

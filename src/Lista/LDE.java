@@ -7,8 +7,8 @@ public class LDE implements Lista {
 	private Noh fim;
 	
 	public LDE() {
-		this.inicio = inicio;
-		this.fim = fim;
+		this.inicio = null;
+		this.fim = null;
 	}
 	
 	public Noh getIncio() {
