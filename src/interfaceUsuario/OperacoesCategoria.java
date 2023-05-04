@@ -2,6 +2,7 @@ package interfaceUsuario;
 
 import Base.Categoria;
 import Lista.LDEcategoria;
+import 
 
 public class OperacoesCategoria {
 
@@ -12,7 +13,7 @@ public class OperacoesCategoria {
 		categorias = new LDEcategoria();
 	}
 
-	public static OperacoesCategorias getOperacoes() {
+	public static OperacoesCategoria getOperacoes() {
 		return operacoes;
 	}
 
@@ -28,14 +29,14 @@ public class OperacoesCategoria {
 		System.out.println("Categoria Registrada com sucesso!");
 	}
 
-	public Categoria get(int id) {
+	public Categoria get(int Id) {
 		return Categoria.get(id);
 	}
 
 	public void alterarNome(int id) {
 		if (contem(id)) {
 			String nome = SysIn.inString("Qual é o novo nome da categoria?");
-			categoria.get(id).setNome(nome);
+			categorias.get(id).setNome(nome);
 			System.out.println("Alteração concluída!");
 		} else
 			System.out.println("Categoria não encontrado!");
@@ -60,15 +61,15 @@ public class OperacoesCategoria {
 	}
 
 	public boolean atualizarListaComArquivo(String arquivo) {
-		return categorias.atualizarListaComArquivo(arquivo);
+		return categorias.atualizarListaArquivo(arquivo);
 	}
 	
 	public void imprimeInicioAFim() {
-		categoria.imprimeInicioAFim();
+		categorias.imprimeInicio();
 	}
 
 	public void imprimeFimAInicio() {
-		categoria.imprimeFimAInicio();
+		categorias.imprimeFim();
 	}
 
 }

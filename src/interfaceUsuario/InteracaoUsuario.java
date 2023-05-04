@@ -1,4 +1,4 @@
-package interfaceUsiario;
+package interfaceUsuario;
 
 public class InteracaoUsuario {
 	
