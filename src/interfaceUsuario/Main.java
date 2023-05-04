@@ -1,41 +1,24 @@
 package interfaceUsuario;
 
-import java.awt.EventQueue;
+public class Main {
+	
+	private static String arqCat = ".\\src\\Categorias.csv";
+	private static String arqCli = ".\\src\\Clientes.csv";
+	private static String arqVei = ".\\src\\Veiculos.csv";
 
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-
-public class Main extends JFrame {
-
-	private JPanel contentPane;
-
-	/**
-	 * Launch the application.
-	 */
 	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					Main frame = new Main();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
-
-	/**
-	 * Create the frame.
-	 */
-	public Main() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
-		contentPane = new JPanel();
-		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-
-		setContentPane(contentPane);
+		OperacoesCategoria.getOperacoes().atualizarListaComArquivo(arqCat);
+		OperacoesCliente.getOperacoes().atualizarListaComArquivo(arqCli);
+		OperacoesVeiculo.getOperacoes().atualizarListaComArquivo(arqVei);
+		
+		System.out.println("Bem vindo à PampaLoca & Cia LTDA!\n");
+		
+		InteracaoUsuario interacao = new InteracaoUsuario();
+		interacao.PainelInicial();
+		
+		OperacoesCategoria.getOperacoes().gravarEmArquivo(arqCat);
+		OperacoesCliente.getOperacoes().garavarEmArquivo(arqCli);
+		OperacoesVeiculo.getOperacoes().gravarEmArquivo(arqVei);
 	}
 
 }

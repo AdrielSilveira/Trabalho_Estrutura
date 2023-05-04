@@ -2,7 +2,6 @@ package interfaceUsuario;
 
 import Base.Categoria;
 import Lista.LDEcategoria;
-import 
 
 public class OperacoesCategoria {
 
@@ -29,8 +28,8 @@ public class OperacoesCategoria {
 		System.out.println("Categoria Registrada com sucesso!");
 	}
 
-	public Categoria get(int Id) {
-		return Categoria.get(id);
+	public Categoria get(int id) {
+		return categorias.get(id);
 	}
 
 	public void alterarNome(int id) {
