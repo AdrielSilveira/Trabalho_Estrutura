@@ -101,7 +101,9 @@ public class LDEcliente {
 	
 	public void imprimeInicio() {
 		for(Nohcliente i = inicio; i != null; i.getProx()) {
-			System.out.println(i.toString() + "\n");
+			if(i != null) {
+				System.out.println(i.toString() + "\n");
+			}
 		}
 	}
 	

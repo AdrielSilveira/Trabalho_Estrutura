@@ -55,11 +55,11 @@ public class OperacoesCategoria {
 		return categorias.contem(id);
 	}
 
-	public boolean gravarEmArquivo(String arquivo) {
+	public boolean gravarArquivo(String arquivo) {
 		return categorias.gravarArquivo(arquivo);
 	}
 
-	public boolean atualizarListaComArquivo(String arquivo) {
+	public boolean atualizarListaArquivo(String arquivo) {
 		return categorias.atualizarListaArquivo(arquivo);
 	}
 	

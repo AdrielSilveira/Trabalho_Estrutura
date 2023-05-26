@@ -127,11 +127,11 @@ public class OperacoesVeiculo {
 		veiculos.imprimeFim();
 	}
 
-	public boolean atualizarListaComArquivo(String arquivo) {
+	public boolean atualizarListaArquivo(String arquivo) {
 		return veiculos.atualizarListaArquivo(arquivo);
 	}
 	
-	public boolean gravarEmArquivo(String arquivo) {
+	public boolean gravarArquivo(String arquivo) {
 		return veiculos.gravarArquivo(arquivo);
 	}
 	

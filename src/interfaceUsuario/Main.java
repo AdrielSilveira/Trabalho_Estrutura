@@ -7,18 +7,18 @@ public class Main {
 	private static String arqVei = ".\\src\\Veiculos.csv";
 
 	public static void main(String[] args) {
-		OperacoesCategoria.getOperacoes().atualizarListaComArquivo(arqCat);
-		OperacoesCliente.getOperacoes().atualizarListaComArquivo(arqCli);
-		OperacoesVeiculo.getOperacoes().atualizarListaComArquivo(arqVei);
+		OperacoesCategoria.getOperacoes().atualizarListaArquivo(arqCat);
+		OperacoesCliente.getOperacoes().atualizarListaArquivo(arqCli);
+		OperacoesVeiculo.getOperacoes().atualizarListaArquivo(arqVei);
 		
 		System.out.println("Bem vindo à PampaLoca & Cia LTDA!\n");
 		
 		InteracaoUsuario interacao = new InteracaoUsuario();
 		interacao.PainelInicial();
 		
-		OperacoesCategoria.getOperacoes().gravarEmArquivo(arqCat);
-		OperacoesCliente.getOperacoes().garavarEmArquivo(arqCli);
-		OperacoesVeiculo.getOperacoes().gravarEmArquivo(arqVei);
+		OperacoesCategoria.getOperacoes().gravarArquivo(arqCat);
+		OperacoesCliente.getOperacoes().garavarArquivo(arqCli);
+		OperacoesVeiculo.getOperacoes().gravarArquivo(arqVei);
 	}
 
 }

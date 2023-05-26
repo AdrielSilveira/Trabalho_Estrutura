@@ -85,11 +85,11 @@ public class OperacoesCliente {
 		clientes.imprimeFim();
 	}
 
-	public boolean atualizarListaComArquivo(String arquivo) {
+	public boolean atualizarListaArquivo(String arquivo) {
 		return clientes.atualizarListaArquivo(arquivo);
 	}
 	
-	public boolean garavarEmArquivo(String arquivo) {
+	public boolean garavarArquivo(String arquivo) {
 		return clientes.gravarArquivo(arquivo);
 	}
 
